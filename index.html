@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>portfolio 2.0</title>
+            <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+            <Link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+    <body>
+        <div>
+            <nav>
+                <div class="logo">Gleam</div>
+                <ul>
+                    <a href="#Home"><li>Home</li></a>
+                    <a href="#Project"><li>Projects</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="Home" class="Home" style="background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(images/banner5.jpg); height: 100vh; background-size: cover;">
+            <div class="container">
+                <div class="home-page" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);" >
+                    <h1 class="heading" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white; " >Hello, Welcome to My Portfolio.</h1>
+                    <a href="" class="button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="Project">
+            <div class="portfolio">
+                <div class="resume">
+                    <h1>Projects</h1>
+                    <p>From Web Components and Design to Django backend implementation and RestFul Apis. Check out my latest Projects.</p>
+                    <card>
+                        <ul>
+                            <li><img src="images/circus.png" width=300/> </li>
+                            <li><img src="images/game.png" width=300/> </li>
+                            <li><img src="images/cake.png" width=300/> </li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/safe.png" width=300/> </li>
+                            <li><img src="images/submarine.png" width=300/> </li>
+                            <li><img src="images/cabin.png" width=300/> </li>
+                        </ul>
+                    </card>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="About">
+            <div class="about">
+                <div class="about-me">
+                    <h1 style="color: #deaa86; font-size: 1.8rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >About Me</h1>
+                    <p class="desc">
+                       Hi there, My name is Mbugua George. I am a web application developer and
+                       designer. Currently I am pursuing a bachelors' degree in Information Technology 
+                       at Maseno University (Kenya). Most of my free time I do freelance projects and work on some of mine.
+                       I have both Frontend and Backend skills when it comes to web development. I have specialized in HTML, 
+                       CSS, JS and ReactJs for frontend development. For backend development, I use Python, MySQL, Django, Django-Rest-Framework and 
+                       SQLIte. Git and Github for my version control. I am open to any freelance projects you got.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="Contact" >
+            <div class="contact">
+                <div class="contact-us">
+                    <h1>Get in Touch</h1>
+                </div>
+                <div class="contact-me">
+                    <h1>Send Us a Message</h1>
+                    <form>
+                        <input type="text" name="first name" placeholder="First Name"/>
+                        <input type="text" name="last name" placeholder="Last Name"/>
+                        <input type="email" name="email" placeholder="Email"/>
+                        <textarea type="text" name="Message" placeholder="Type your message here..."></textarea>
+                        <input type="submit" value="Send Message" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
