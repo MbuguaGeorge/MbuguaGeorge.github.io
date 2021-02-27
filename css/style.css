@@ -24,7 +24,7 @@ nav{
     display: flex;
     justify-content: space-around;
     background-color: transparent;
-    min-height: 8vh;
+    min-height: 10vh;
     align-items: center;
     width: 100%;
     position: fixed;
@@ -87,13 +87,13 @@ nav a:hover{
     background: url(../images/0.jpg) no-repeat left;
     background-size: 58%;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 120px 0;
 }
 .about-me{
     width: 55%;
     float: right;
     background-color: #ddd;
-    padding: 115px;
+    padding: 80px;
 }
 .portfolio{
     text-align: center;
@@ -118,7 +118,6 @@ nav a:hover{
 .desc{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: justify;
-    
 }
 .about-me h1{
     margin-bottom: 15px;
@@ -128,11 +127,37 @@ nav a:hover{
     margin-left: 20px;
 }
 .contact-me{
-    background-color: #ddd;
-    padding: 150px;
+
+    padding: 80px;
 }
 .contact-us{
-    padding: 150px;
+
+    padding: 80px;
+}
+.contact-us h1{
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact-us h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+.contact-us p{
+    font-size: 1rem;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact-us p a{
+    text-decoration: none;
+    color: blue;
+}
+.contact-us ul li{
+    list-style: none;
+    margin: 20px;
+}
+.contact-us ul{
+    display: flex;
 }
 .contact{
     display: flex;
@@ -156,6 +181,7 @@ textarea{
 }
 .contact-me h1{
     margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .contact-me input[type="submit"]{
     display: flex;
