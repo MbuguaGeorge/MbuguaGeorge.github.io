@@ -70,9 +70,6 @@ nav a:hover{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     align-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 .button:hover{
     background-color: turquoise;
@@ -81,6 +78,13 @@ nav a:hover{
 }
 .heading{
     margin-bottom: 20px;
+}
+.home-page{
+    text-align: center;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .about{
     background-color: #ddd;
@@ -110,7 +114,9 @@ nav a:hover{
 .resume ul li{
     list-style: none;
     padding: 10px;
+    cursor: pointer;
 }
+
 .resume ul{
     display: flex;
     justify-content: center;
@@ -127,11 +133,9 @@ nav a:hover{
     margin-left: 20px;
 }
 .contact-me{
-
     padding: 80px;
 }
 .contact-us{
-
     padding: 80px;
 }
 .contact-us h1{
@@ -200,4 +204,129 @@ textarea{
 }
 .contact-me input[type="submit"]:hover{
     color: white;
+}
+
+/** Responsive **/
+
+.divs div{
+    width: 25px;
+    height: 5px;
+    color: white;
+    margin: 5px;
+}
+.divs{
+    display: none;
+}
+
+@media only screen and (max-width:1024px){
+    nav ul{
+        width: 100%;
+    }
+    .about-me{
+        padding: 80px;
+        width: 100%;
+    }
+    .container{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .about-me h1{
+        text-align: center;
+    }
+    .about-me{
+        padding: 70px;
+    }
+    .about{
+        padding: 0;
+    }
+    .contact-me{
+        padding: 0;
+        margin-left: 15px;
+    }
+    .contact-us{
+        padding: 0;
+        margin-left: 15px;
+    }
+    .contact{
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width:880px){
+    nav ul{
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #1d1d1d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+    nav{
+        display: flex;
+    }
+    .divs{
+        display: block;
+        cursor: pointer;
+    }
+    .divs div{
+        background-color: #ddd;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    .resume ul{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+@media only screen and (min-width:540px){
+    .contact-me{
+        margin-left: 80px;
+    }
+    .contact-us{
+        margin-left: 80px;
+    }
+}
+@media only screen and (max-width:640px){
+    .portfolio{
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:280px){
+    .about{
+        padding: 0;
+    }
+    .about-me{
+        padding: 15px;
+    }
 }

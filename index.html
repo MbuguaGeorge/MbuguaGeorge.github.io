@@ -11,17 +11,22 @@
         <div>
             <nav id="trial">
                 <div class="logo">Gleam</div>
-                <ul>
+                <ul class="nav-links">
                     <a href="#Home"><li>Home</li></a>
                     <a href="#Project"><li>Projects</li></a>
                     <a href="#About"><li>About</li></a>
                     <a href="#Contact"><li>Contact</li></a>
                 </ul>
+                <div class="divs">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
         </div>
         <div id="Home" class="Home" style="background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(images/banner5.jpg); height: 100vh; background-size: cover;">
             <div class="container">
-                <div class="home-page" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);" >
+                <div class="home-page">
                     <h1 class="heading" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white; " >Hello, Welcome to My Portfolio.</h1>
                     <a href="#Project" class="button">Explore</a>
                 </div>
@@ -34,14 +39,16 @@
                     <p>From Web Components and Design to Django backend implementation and RestFul Apis. Check out my latest Projects.</p>
                     <card>
                         <ul>
-                            <li><img src="images/circus.png" width=300/> </li>
-                            <li><img src="images/game.png" width=300/> </li>
-                            <li><img src="images/cake.png" width=300/> </li>
+                            <li>
+                                <img src="images/circus.png" width=300/>
+                            </li>
+                            <li><img src="images/game.png" width=300/></li>
+                            <li><img src="images/cake.png" width=300/></li>
                         </ul>
                         <ul>
-                            <li><img src="images/safe.png" width=300/> </li>
-                            <li><img src="images/submarine.png" width=300/> </li>
-                            <li><img src="images/cabin.png" width=300/> </li>
+                            <li><img src="images/safe.png" width=300/></li>
+                            <li><img src="images/submarine.png" width=300/></li>
+                            <li><img src="images/cabin.png" width=300/></li>
                         </ul>
                     </card>
                 </div>
@@ -64,19 +71,6 @@
         </div>
         <div class="container" id="Contact" >
             <div class="contact">
-                <div class="contact-us">
-                    <h1>Get in Touch</h1>
-                    <p>For web development and web design gigs or any questions:</p>
-                    <p>Email me at <a href="">mbuguag026@gmail.com</a></p>
-
-                    <h3>You can reach me on social media:</h3>
-                    <ul>
-                        <li><a href=""><img src="images/instagram.svg" width=20></a></li>
-                        <li><a href=""><img src="images/twitter.svg" width=20></a></li>
-                        <li><a href=""><img src="images/facebook.svg" width=20></a></li>
-                        <li><a href=""><img src="images/linked.png" width=20></a></li>
-                    </ul>
-                </div>
                 <div class="contact-me">
                     <h1>Send Us a Message</h1>
                     <form>
@@ -87,6 +81,18 @@
                         <input type="submit" value="Send Message" class="btn" />
                     </form>
                 </div>
+            <div class="contact-us">
+                <h1>Get in Touch</h1>
+                <p>For web development and web design gigs or any questions:</p>
+                <p>Email me at <a href="">mbuguag026@gmail.com</a></p>
+
+                <h3>You can reach me on social media:</h3>
+                <ul>
+                    <li><a href=""><img src="images/instagram.svg" width=20></a></li>
+                    <li><a href=""><img src="images/twitter.svg" width=20></a></li>
+                    <li><a href=""><img src="images/facebook.svg" width=20></a></li>
+                    <li><a href=""><img src="images/linked.png" width=20></a></li>
+                </ul>
             </div>
         </div>
         <script src="js/main.js" ></script>
