@@ -99,87 +99,51 @@ nav a:hover{
     width: 55%;
     float: right;
     background-color: #ddd;
-    padding: 80px;
+    padding: 60px;
 }
-/* .portfolio{
-    text-align: center;
-    padding: 50px;
-}
-.resume h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: coral;
-}
-.resume p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 20px;
-}
-.resume ul li{
-    list-style: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.resume ul{
-    display: flex;
-    justify-content: center;
-}
-.desc{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
-} */
-
-
 
 /* now edwin */
 .projects__heading {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
-    padding-top: 3rem; }
+    padding-top: 2rem; }
     @media only screen and (max-width: 56.25em) {
       .projects__heading {
-        padding-top: 4rem; } }
+        padding-top: 4rem; 
+    } 
+}
   
   .projects__container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: white;
-    margin-top: 5rem; }
+    margin-top: 2rem; }
     @media only screen and (max-width: 56.25em) {
       .projects__container {
-        margin-top: 3rem; } }
+        margin-top: 3rem; 
+    } 
+}
   
-  .projects__card {
-     
-    max-width: 28rem;
-    /* border-radius: 1.5rem; */
+  .projects__card { 
+    width: 24rem;
     margin-top: 4rem;
     position: relative;
-    /* color: #fff; */
     overflow: hidden;
-    
-    
-    /* box-shadow: 0 -0.5rem 10px rgba(0, 0, 0, 0.1);  */
 }
-    .projects__card::before {
+   .projects__card::before {
       content: "";
       position: absolute;
-      /* left: 0;
-      top: -0.5rem; */
       width: 100%;
       height: 100%;
-      
-      /* background-color: white; */
-      opacity: 0.4; } 
+      opacity: 0.4; 
+    } 
   
   .projects__img {
     height: 100%;
     width: 100%;
-    /* border-radius: 1.5rem; */
-    /* transform: scale(1); */
     overflow: hidden;
-    
     transition: all 0.45s ease-in-out; 
 }
   
@@ -193,6 +157,7 @@ nav a:hover{
     height: 100%;
     top: 50%;
     left: 50%;
+    color:white;
     transform: translate(-50%, -50%); 
     
 }
@@ -206,19 +171,20 @@ nav a:hover{
     margin: 0 1rem 0 1rem; 
 }
 .projects__card:hover .overlay {
-    opacity: .4; 
+    opacity: .8; 
+    background-color: black;  
 
 }
   
   .projects__card:hover .projects__description {
     display: flex;
-    
-    /* transition: all 0.45s ease-in-out; */
-    z-index: 5; }
+    transition: all 0.45s ease-in-out;
+    z-index: 5; 
+}
   
   .projects__card:hover .projects__img {
     transform: scale(1.2); 
-    
+    opacity: .4; 
 }
   
   .projects__card .overlay {
@@ -230,20 +196,10 @@ nav a:hover{
     height: 100%;
     background-color: white;
     opacity: 0;
-    /* border-radius: 1.5rem; */
     transition: all 0.45s ease-in-out; 
 }
-/* .projects {
-    height: 100%;
-    overflow-x: hidden;
-    padding-bottom: 8rem;
-    background-color: #fff;
-    color: white;
-    border-bottom: var(--line);
-    box-shadow: 0px -8px 10px 0px rgba(0, 0, 0, 0.1); }
-    @media only screen and (max-width: 37.5em) {
-      .projects {
-        padding-bottom: 4rem; } } */
+/* end of edwin */
+
 .about-me h1{
     margin-bottom: 15px;
 }
