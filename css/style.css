@@ -102,6 +102,10 @@ nav a:hover{
     padding: 60px;
 }
 
+.projects{
+    margin-top: 30px;
+}
+
 /* now edwin */
 .projects__heading {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
