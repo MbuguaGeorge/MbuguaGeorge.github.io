@@ -133,7 +133,8 @@ nav a:hover{
 }
   
   .projects__card { 
-    width: 24rem;
+    border-radius: 10px;
+    width: 23rem;
     position: relative;
     overflow: hidden;
 }
@@ -146,6 +147,8 @@ nav a:hover{
     } 
   
   .projects__img {
+    border-radius: 10px;
+    
     padding: 8px;
     height: 100%;
     width: 100%;
