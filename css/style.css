@@ -99,6 +99,11 @@ nav a:hover{
     justify-content: center;
     flex-direction: column;
 }
+@media only screen and (max-width: 56.25em){
+    .home-page{
+        margin-left: 10px;
+    }
+}
 .home-page h5{
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
