@@ -31,12 +31,12 @@ nav{
     z-index: 1;
 }
 nav .logo{
-    color: white;
+    color: #ddd;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     font-size: 2rem;
     letter-spacing: 0.2rem;
-    
+    text-transform: uppercase;
 }
 nav ul{
     display: flex;
@@ -49,7 +49,7 @@ nav li{
 nav a{
     text-decoration: none;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
 }
@@ -57,36 +57,58 @@ nav a:hover{
     color: crimson;
 }
 .button{
-    padding-top: 20px;
-    border: 2px solid #ddd;
-    text-align: center;
+    border: 1px solid #ffde27;
     padding: 15px 40px;
     margin: 20px auto;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: 0.25s;
     cursor: pointer;
-    color: white;
+    color: #ffde27;
     background-color: transparent;
     letter-spacing: 1.2px;
-    font-weight: 700;
+    font-weight: 200;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    align-content: center;
 }
 .button:hover{
     background-color: turquoise;
-    border: 2px solid turquoise;
+    border: 1px solid turquoise;
     color: black;
 }
+.download{
+    padding-top: 30px;
+}
 .heading{
-    margin-bottom: 20px;
+    color: #fe5c01;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 0;
+    letter-spacing: 2.5px;
+}
+.Home{
+    background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(../images/banner9.jpg) center no-repeat;
+    height: 100vh;
+    background-size: cover;
 }
 .home-page{
-    text-align: center;
+    margin-left: 100px;
+    width: 450px;
     height: 50rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.home-page h5{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+.home-page p{
+    color: white;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
 }
 .about{
     background-color: #ddd;
